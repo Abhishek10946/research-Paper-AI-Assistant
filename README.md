@@ -1,4 +1,4 @@
-# ResearchPaper-Assistant
+# Research-Paper-AI-Assistant
 
 An AI-powered research assistant that constructs IEEE-formatted research papers from GitHub repositories and deconstructs existing research papers for interactive question-answering.
 
@@ -68,161 +68,160 @@ ResearchPaper-Assistant enables researchers, students, and developers to:
 
 ## Project Structure
 
-research_paper_project/
+research-paper-assistant/
 │
+├── app.py
 ├── Home.py
+├── README.md
+├── requirements.txt
+├── .env.example
+├── .gitignore
+│
 ├── pages/
-│ ├── Constructor.py
-│ └── Deconstructor.py
+│   ├── Constructor.py
+│   └── Deconstructor.py
 │
 ├── constructor/
-│ ├── app.py
-│ ├── analysis.py
-│ ├── github_loader.py
-│ ├── paper_generator.py
-│ ├── pdf_builder.py
-│ ├── vectorstore.py
-│ └── utils.py
+│   ├── __init__.py
+│   ├── app.py
+│   ├── analysis.py
+│   ├── github_loader.py
+│   ├── paper_generator.py
+│   ├── pdf_builder.py
+│   ├── vectorstore.py
+│   └── utils.py
 │
 ├── deconstructor/
-│ ├── app.py
-│ ├── ingestion.py
-│ ├── retriever.py
-│ ├── memory.py
-│ ├── llm.py
-│ └── database.py
+│   ├── __init__.py
+│   ├── app.py
+│   ├── ingestion.py
+│   ├── retriever.py
+│   ├── memory.py
+│   ├── llm.py
+│   └── database.py
 │
 ├── shared/
-│ ├── embeddings.py
-│ ├── text_splitter.py
-│ └── config.py
+│   ├── __init__.py
+│   ├── embeddings.py
+│   ├── text_splitter.py
+│   └── config.py
 │
-├── data/
-│ ├── chroma/
-│ ├── faiss_cache/
-│ └── sessions.db
-│
-├── requirements.txt
-├── .env
-└── README.md
+└── data/
+    ├── chroma/
+    ├── faiss_cache/
+    └── sessions.db
+
 
 ---
 
-### First of all you need to fix your API KEY into .env file
+### First of all we need to fix our API KEYs into .env file
 
-## Installation
+---
 
-### 1. Clone the Repository
 
-```bash
-git clone <repository-url>
-cd research_pepaar_project
+1. Environment Setup
 
-2. Create Virtual Environment
-python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # Linux / macOS
+Before running the application, configure environment variables using a .env file.
 
-3. Install Dependencies
-pip install -r requirements.txt
-
-Environment Configuration
-
-Create a .env file using .env.example:
+Create a .env file using .env.example and add the following:
 
 GROQ_API_KEY=your_groq_api_key
 LANGCHAIN_PROJECT=researchpaper-assistant
 
-
 Get your Groq API key from:
 https://console.groq.com
 
-Run the Application
-streamlit run Home.py
+Do not commit real API keys to the repository.
 
+------------------------------------------------------------
 
-Open in your browser:
+2. Installation
+
+2.1 Clone the Repository
+
+git clone <repository-url>
+cd research-paper-assistant
+
+2.2 Create a Virtual Environment
+
+python -m venv venv
+
+Activate the environment (Windows):
+
+venv\Scripts\activate
+
+Activate the environment (Linux / macOS):
+
+source venv/bin/activate
+
+2.3 Install Dependencies
+
+pip install -r requirements.txt
+
+------------------------------------------------------------
+
+3. Run the Application
+
+streamlit run app.py
+
+Open the application in your browser:
 
 http://localhost:8501
 
-Usage Guide
-Constructor Verification
+------------------------------------------------------------
 
-Open Constructor
+4. Usage Guide
 
-Paste a small public GitHub repository URL
+4.1 Constructor Verification
 
-Enter Author Name and Institution
-
-Click Generate
-
-Verify PDF download
+Step 1: Open Constructor
+Step 2: Paste a small public GitHub repository URL
+Step 3: Enter Author Name and Institution
+Step 4: Click Generate
+Step 5: Verify the PDF download
 
 Successful PDF generation confirms Constructor functionality.
 
-Deconstructor Usage
+4.2 Deconstructor Usage
 
-Open Deconstructor
+Step 1: Open Deconstructor
+Step 2: Click New Chat
+Step 3: Upload one or more research paper PDFs
+Step 4: Ask questions using the chat interface
+Step 5: Start a new chat for independent document sessions
 
-Click New Chat
+Each chat session is persistent and isolated.
 
-Upload one or more research paper PDFs
+------------------------------------------------------------
 
-Ask questions in the chat interface
+5. Design Principles
 
-Start a new chat for independent document sessions
+1. Modular and maintainable architecture
+2. Stateless UI with persistent backend memory
+3. Transparent logic without hard-coded assumptions
+4. Scalable for both local and cloud deployments
 
-Each session is persistent and isolated.
+------------------------------------------------------------
 
-Design Principles
+6. Notes
 
-Modular and maintainable architecture
+1. Large repositories may take longer to process
+2. GitHub API rate limits apply for unauthenticated requests
+3. First embedding run may be slower due to model initialization
 
-Stateless UI with persistent backend memory
+------------------------------------------------------------
 
-Transparent logic with no hard-coded assumptions
-
-Scalable for both local and cloud deployments
-
-Notes
-
-Large repositories may take longer to process
-
-GitHub API rate limits apply for unauthenticated requests
-
-First embedding run is slower due to model initialization
-
-License
+7. License
 
 This project is intended for educational and research use.
 
 Users must ensure compliance with individual GitHub repository licenses when generating research papers from source code.
 
-Future Enhancements
+------------------------------------------------------------
 
-Citation graph generation
+8. Future Enhancements
 
-Multi-paper comparative analysis
-
-Docker and cloud-native deployment
-
-Support for additional academic templates beyond IEEE
-
-
----
-
-### Final Confirmation
-
-- This is **one single `.md` file**
-- 100% valid GitHub Markdown
-- Recruiter-ready
-- Academic-quality documentation
-- No formatting errors
-
-If you want next:
-- **Resume bullets from this project**
-- **Architecture diagram**
-- **Docker support**
-- **Portfolio website section**
-
-Say what you want to add next.
+1. Citation graph generation
+2. Multi-paper comparative analysis
+3. Docker and cloud-native deployment
+4. Support for additional academic templates beyond IEEE
