@@ -66,7 +66,7 @@ ResearchPaper-Assistant enables researchers, students, and developers to:
 
 ---
 
-## Project Structure
+## Project Structure & Additionally Architecture diagrams high level and low level both are in docs\
 ```bash
 
 research-paper-assistant/
