@@ -122,26 +122,25 @@ research-paper-assistant/
 
 1. Environment Setup
 
-Before running the application, configure environment variables using a .env file.
+- Before running the application, configure environment variables using a .env file.
 
-Create a .env file using .env.example and add the following:
+- Create a .env file using .env.example and add the following:
 
-GROQ_API_KEY=your_groq_api_key
-LANGCHAIN_PROJECT=researchpaper-assistant
+- GROQ_API_KEY=your_groq_api_key
+- LANGCHAIN_PROJECT=researchpaper-assistant
 
-Get your Groq API key from:
-https://console.groq.com
+- Get your Groq API key from:
+- https://console.groq.com
 
-Do not commit real API keys to the repository.
+- Do not commit real API keys to the repository.
 
-------------------------------------------------------------
 
 2. Installation
 
 2.1 Clone the Repository
 
-git clone <repository-url>
-cd research-paper-assistant
+- git clone <repository-url>
+- cd research-paper-assistant
 
 2.2 Create a Virtual Environment
 
@@ -166,61 +165,60 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-Open the application in your browser:
+- Open the application in your browser:
 
-http://localhost:8501
+- http://localhost:8501
 
-------------------------------------------------------------
 
 ## 4. Usage Guide
 
 # 4.1 Constructor Verification
 
-Step 1: Open Constructor
-Step 2: Paste a small public GitHub repository URL
-Step 3: Enter Author Name and Institution
-Step 4: Click Generate
-Step 5: Verify the PDF download
+- Step 1: Open Constructor
+- Step 2: Paste a small public GitHub repository URL
+- Step 3: Enter Author Name and Institution
+- Step 4: Click Generate
+- Step 5: Verify the PDF download
 
-Successful PDF generation confirms Constructor functionality.
+- Successful PDF generation confirms Constructor functionality.
 
 ## 4.2 Deconstructor Usage
 
-Step 1: Open Deconstructor
-Step 2: Click New Chat
-Step 3: Upload one or more research paper PDFs
-Step 4: Ask questions using the chat interface
-Step 5: Start a new chat for independent document sessions
+- Step 1: Open Deconstructor
+- Step 2: Click New Chat
+- Step 3: Upload one or more research paper PDFs
+- Step 4: Ask questions using the chat interface
+- Step 5: Start a new chat for independent document sessions
 
-Each chat session is persistent and isolated.
+- Each chat session is persistent and isolated.
 
 
 ## 5. Design Principles
 
-1. Modular and maintainable architecture
-2. Stateless UI with persistent backend memory
-3. Transparent logic without hard-coded assumptions
-4. Scalable for both local and cloud deployments
+- 1. Modular and maintainable architecture
+- 2. Stateless UI with persistent backend memory
+- 3. Transparent logic without hard-coded assumptions
+- 4. Scalable for both local and cloud deployments
 
 ------------------------------------------------------------
 
 ## 6. Notes
 
-1. Large repositories may take longer to process
-2. GitHub API rate limits apply for unauthenticated requests
-3. First embedding run may be slower due to model initialization
+- 1. Large repositories may take longer to process
+- 2. GitHub API rate limits apply for unauthenticated requests
+- 3. First embedding run may be slower due to model initialization
 
 
 ## 7. License
 
-This project is intended for educational and research use.
+- This project is intended for educational and research use.
 
-Users must ensure compliance with individual GitHub repository licenses when generating research papers from source code.
+- Users must ensure compliance with individual GitHub repository licenses when generating research papers from source code.
 
-
+ 
 ## 8. Future Enhancements
 
-1. Citation graph generation
-2. Multi-paper comparative analysis
-3. Docker and cloud-native deployment
-4. Support for additional academic templates beyond IEEE
+- 1. Citation graph generation
+- 2. Multi-paper comparative analysis
+- 3. Docker and cloud-native deployment
+- 4. Support for additional academic templates beyond IEEE
