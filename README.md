@@ -67,6 +67,7 @@ ResearchPaper-Assistant enables researchers, students, and developers to:
 ---
 
 ## Project Structure
+```bash
 
 research-paper-assistant/
 │
@@ -111,7 +112,7 @@ research-paper-assistant/
     ├── faiss_cache/
     └── sessions.db
 
-
+```
 ---
 
 ### First of all we need to fix our API KEYs into .env file
@@ -144,6 +145,7 @@ cd research-paper-assistant
 
 2.2 Create a Virtual Environment
 
+```bash
 python -m venv venv
 
 Activate the environment (Windows):
@@ -153,26 +155,26 @@ venv\Scripts\activate
 Activate the environment (Linux / macOS):
 
 source venv/bin/activate
+```
 
 2.3 Install Dependencies
-
+```bash
 pip install -r requirements.txt
-
-------------------------------------------------------------
+```
 
 3. Run the Application
-
+```bash
 streamlit run app.py
-
+```
 Open the application in your browser:
 
 http://localhost:8501
 
 ------------------------------------------------------------
 
-4. Usage Guide
+## 4. Usage Guide
 
-4.1 Constructor Verification
+# 4.1 Constructor Verification
 
 Step 1: Open Constructor
 Step 2: Paste a small public GitHub repository URL
@@ -182,7 +184,7 @@ Step 5: Verify the PDF download
 
 Successful PDF generation confirms Constructor functionality.
 
-4.2 Deconstructor Usage
+## 4.2 Deconstructor Usage
 
 Step 1: Open Deconstructor
 Step 2: Click New Chat
@@ -192,9 +194,8 @@ Step 5: Start a new chat for independent document sessions
 
 Each chat session is persistent and isolated.
 
-------------------------------------------------------------
 
-5. Design Principles
+## 5. Design Principles
 
 1. Modular and maintainable architecture
 2. Stateless UI with persistent backend memory
@@ -203,23 +204,21 @@ Each chat session is persistent and isolated.
 
 ------------------------------------------------------------
 
-6. Notes
+## 6. Notes
 
 1. Large repositories may take longer to process
 2. GitHub API rate limits apply for unauthenticated requests
 3. First embedding run may be slower due to model initialization
 
-------------------------------------------------------------
 
-7. License
+## 7. License
 
 This project is intended for educational and research use.
 
 Users must ensure compliance with individual GitHub repository licenses when generating research papers from source code.
 
-------------------------------------------------------------
 
-8. Future Enhancements
+## 8. Future Enhancements
 
 1. Citation graph generation
 2. Multi-paper comparative analysis
