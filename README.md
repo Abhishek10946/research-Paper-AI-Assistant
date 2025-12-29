@@ -66,6 +66,12 @@ ResearchPaper-Assistant enables researchers, students, and developers to:
 
 ---
 
+# Architecture Diagrams
+## High Level Architecture Diagram
+![System Architecture](docs/high_level_architecture.png)
+## Low Level Architecture Diagram
+![System Architecture](docs/low_level_architecture.png)
+
 ## Project Structure & Additionally Architecture diagrams high level and low level both are in docs\
 ```bash
 
