@@ -169,7 +169,7 @@ pip install -r requirements.txt
 
 3. Run the Application
 ```bash
-streamlit run app.py
+streamlit run home.py
 ```
 - Open the application in your browser:
 
