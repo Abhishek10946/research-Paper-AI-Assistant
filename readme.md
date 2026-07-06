@@ -91,8 +91,6 @@ Sessions are **auto-named from the paper's content**, remember the **last 3 turn
 |:---:|:---:|
 | <img src="docs/screenshot-dark.png" width="420" alt="Dark theme"/> | <img src="docs/screenshot-light.png" width="420" alt="Light theme"/> |
 
-<sub>*(drop your screenshots into `docs/` — `screenshot-dark.png` & `screenshot-light.png`)*</sub>
-
 </div>
 
 ---
