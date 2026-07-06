@@ -16,8 +16,18 @@ FAISS_CACHE_DIR = Path(os.getenv("FAISS_CACHE_DIR", str(DATA_DIR / "faiss_cache"
 for _p in (DATA_DIR, CHROMA_DIR, FAISS_CACHE_DIR):
     _p.mkdir(parents=True, exist_ok=True)
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
+def _secret(name: str) -> str:
+    val = os.getenv(name, "")
+    if not val:
+        try:
+            import streamlit as st
+            val = st.secrets.get(name, "")
+        except Exception:
+            pass
+    return val
+
+GROQ_API_KEY = _secret("GROQ_API_KEY")
+GITHUB_TOKEN = _secret("GITHUB_TOKEN")
 
 EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
 DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DATA_DIR / 'sessions.db'}")
