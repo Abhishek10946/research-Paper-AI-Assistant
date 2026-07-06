@@ -22,7 +22,13 @@
 
 <br>
 
-[✨ Features](#-features) · [🎬 Demo](#-demo) · [🧠 How it works](#-how-it-works) · [⚡ Quick start](#-quick-start) · [🛠️ Tech stack](#%EF%B8%8F-tech-stack) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
+### 🌐 [**✦ TRY IT LIVE ✦**](https://research-paper-ai-assistantgit-4mzqshfg4wnko2p9egv2fb.streamlit.app/)
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://research-paper-ai-assistantgit-4mzqshfg4wnko2p9egv2fb.streamlit.app/)
+
+<br>
+
+[🌐 Live app](https://...) · [✨ Features](#-features) · [🎬 Demo](#-demo) · [🧠 How it works](#-how-it-works) · [⚡ Quick start](#-quick-start) · [🛠️ Tech stack](#%EF%B8%8F-tech-stack) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 
 </div>
 
@@ -130,6 +136,9 @@ flowchart LR
 ---
 
 ## ⚡ Quick start
+> ⚡ **No setup?** Use the hosted version: [research-paper-ai-assistant on Streamlit Cloud](https://research-paper-ai-assistantgit-4mzqshfg4wnko2p9egv2fb.streamlit.app/) — first load may take ~1 min if the app is waking up.
+
+## or 
 
 ```bash
 # 1 · Clone
@@ -238,7 +247,7 @@ research-paper-assistant/
 - [x] Auto-named, persistent, deletable chat sessions
 - [x] Automatic DB migration on startup
 - [ ] 🐳 Docker image + `docker-compose.yml`
-- [ ] ☁️ One-click Streamlit Cloud deploy
+- [x] ☁️ Deployed on Streamlit Cloud
 - [ ] 🔐 Private repos via OAuth
 - [ ] 📚 APA / MLA / ACM formats
 - [ ] 🕸️ Citation graph generation
