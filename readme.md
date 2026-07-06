@@ -135,9 +135,8 @@ flowchart LR
 
 ```bash
 # 1 · Clone
-git clone https://github.com/Abhishek10946/research-paper-assistant.git
-cd research-paper-assistant
-
+git clone https://github.com/Abhishek10946/research-Paper-AI-Assistant.git
+cd research-Paper-AI-Assistant
 # 2 · Virtual environment
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
