@@ -28,7 +28,7 @@
 
 <br>
 
-[🌐 Live app](https://...) · [✨ Features](#-features) · [🎬 Demo](#-demo) · [🧠 How it works](#-how-it-works) · [⚡ Quick start](#-quick-start) · [🛠️ Tech stack](#%EF%B8%8F-tech-stack) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
+[🌐 Live app](https://research-paper-ai-assistantgit-4mzqshfg4wnko2p9egv2fb.streamlit.app/) · [✨ Features](#-features) · [🎬 Demo](#-demo) · [🧠 How it works](#-how-it-works) · [⚡ Quick start](#-quick-start) · [🛠️ Tech stack](#%EF%B8%8F-tech-stack) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 
 </div>
 
